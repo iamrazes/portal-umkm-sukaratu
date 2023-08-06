@@ -35,7 +35,7 @@
           <nav class="mt-2">
               <ul class="nav nav-pills nav-sidebar flex-column">
                   <li class="nav-item">
-                      <a href="{{ route('dashboard') }}" class="nav-link active">
+                      <a href="{{ route('dashboard') }}" class="nav-link {{ request()->routeIs('dashboard') ? 'active' : '' }}">
                           <i class="nav-icon fa fa-th-list"></i>
                           <p>Dashboard</p>
                       </a>
@@ -43,8 +43,8 @@
 
                   <li class="nav-header">CONTENT CONTROL</li>
                   <li class="nav-item">
-                      <a href="" class="nav-link ">
-                          <i class="nav-icon fas fa-shopping-cart"></i>
+                      <a href="{{ route('products.index')}}" class="nav-link {{ request()->routeIs('products.*') ? 'active' : '' }}">
+                          <i class="nav-icon fas fa-shopping-cart "></i>
                           <p>Products</p>
                       </a>
                   </li>
