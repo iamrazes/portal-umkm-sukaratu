@@ -1,0 +1,160 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-size: 16px;
+    margin: 0;
+    font-family: inherit;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    padding: 19px;
+    font-weight: 500;
+}
+
+.navbar .btn{
+    background-color: #F1BB69;
+    border-radius: 27px;
+    font-family: inherit;
+    font-size: 16px;
+    color: aliceblue;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+body{
+    color: rgb(255, 255, 255);
+}
+.hero {
+    position: static;
+    /* min-height: 60vh; */
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #AF6C08;
+    font-family: inherit;
+
+}
+
+.hero .content{
+    max-width: 60rem;
+    /* margin-top: 50px; */
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.hero .content h1 {
+    font-family: inherit;
+    color: #3D3D3D;
+    font-weight: 700;
+    font-size: 52px;
+}
+
+.hero .content h2 {
+    font-family: inherit;
+    color: #AF6C08;
+    font-weight: 700;
+    font-size: 38px;
+}
+
+.hero .content .btn {
+    margin-top: 16px;
+    display: inline-block;
+    padding: 16px 48px;
+    font-size: 20px;
+    color: white;
+    word-wrap: break-word;
+    background-color: #F1BB69;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.hero2{
+    color: black;
+    text-align: center;
+    display: inline;
+    padding-bottom: 50px;
+}
+.hero2 h1{
+    color: #3D3D3D;
+font-family: inherit;
+font-size: 52px;
+font-weight: 700;
+
+}
+
+.hero2 h2{
+    color: #AF6C08;
+font-family: inherit;
+font-size: 38px;
+font-weight: 700;
+
+}
+
+.hero2 h3{
+    margin-top: 20px;
+    color: #3D3D3D;
+    text-align: center;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.custom-image {
+    height: 256px;
+    width: 256px;
+    margin-top: 75px;
+    /* margin: 50px; */
+    /* border-radius: 50%; */
+    object-fit: cover;
+}
+.custom-image-middle {
+    height: 444px;
+    width: 444px;
+    margin: 50px;
+    /* border-radius: 50%; */
+    object-fit: cover;
+}
+
+.divider {
+    background-color: #F1BB69;
+    height: 200px;
+    margin-bottom: 40px;
+}
+
+.carousel-inner {
+    position: static;
+    text-align: center;
+}
+
+.carousel-img {
+    height: 512px;
+    width: 512px;
+    margin: 50px;
+    text-align: center;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: inherit;
+    margin-bottom: 20px;
+}
+.carousel-caption h1{
+    font-size: 52px;
+}
+.carousel-caption p{
+    margin-top: 20px;
+}
+.carousel-item {
+    position: inherit;
+}
