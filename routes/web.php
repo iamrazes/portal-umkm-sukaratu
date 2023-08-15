@@ -19,11 +19,22 @@ Route::get('/', function () {
     return view('index');
 })->name('welcome');
 
+Route::get('/umkm', function () {
+    return view('umkm.index');
+})->name('umkm');
+
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
+
 Route::get('/dashboard', function () {
     return view('admin.index');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::resource('/products', ProductController::class);
+Route::middleware(['auth', 'verified'])->group(function () {
+
+    Route::resource('/products', ProductController::class);
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
