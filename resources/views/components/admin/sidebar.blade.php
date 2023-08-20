@@ -2,8 +2,8 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
       <a href="{{ route('dashboard') }}" class="brand-link">
-          <img src="{{ asset('images/default_admin.jpg') }}" alt="AdminLTE Logo"
-              class="brand-image img-circle elevation-3" style="opacity: .8">
+          <img src="{{ asset('images/default_admin.jpg') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+              style="opacity: .8">
           <span class="brand-text font-weight-light">Admin Dashboard</span>
       </a>
 
@@ -35,7 +35,8 @@
           <nav class="mt-2">
               <ul class="nav nav-pills nav-sidebar flex-column">
                   <li class="nav-item">
-                      <a href="{{ route('dashboard') }}" class="nav-link {{ request()->routeIs('dashboard') ? 'active' : '' }}">
+                      <a href="{{ route('dashboard') }}"
+                          class="nav-link {{ request()->routeIs('dashboard') ? 'active' : '' }}">
                           <i class="nav-icon fa fa-th-list"></i>
                           <p>Dashboard</p>
                       </a>
@@ -43,42 +44,46 @@
 
                   <li class="nav-header">CONTENT CONTROL</li>
                   <li class="nav-item">
-                      <a href="{{ route('products.index')}}" class="nav-link {{ request()->routeIs('products.*') ? 'active' : '' }}">
+                      <a href="{{ route('products.index') }}"
+                          class="nav-link {{ request()->routeIs('products.*') ? 'active' : '' }}">
                           <i class="nav-icon fas fa-shopping-cart "></i>
                           <p>Products</p>
                       </a>
                   </li>
-                  <li class="nav-item">
-                      <a href="" class="nav-link ">
-                          <i class="nav-icon far fa-image"></i>
+                  {{-- <li class="nav-item disabled">
+                      <a href="" class="nav-link disabled">
+                          <i class="nav-icon far fa-image disabled"></i>
                           <p>Galleries</p>
                       </a>
                   </li>
-                  <li class="nav-item">
-                      <a href="" class="nav-link ">
-                          <i class="nav-icon fa fa-feather"></i>
+                  <li class="nav-item disabled">
+                      <a href="" class="nav-link disabled">
+                          <i class="nav-icon fa fa-feather disabled"></i>
                           <p>Stories</p>
                       </a>
-                  </li>
-                  <li class="nav-header">SYSTEM CONTROL</li>
-                  <li class="nav-item">
-                      <a href="" class="nav-link ">
-                          <i class="nav-icon fa fa-users"></i>
-                          <p>Users</p>
-                      </a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="" class="nav-link ">
-                          <i class="nav-icon fa fa-user-cog"></i>
-                          <p>Roles</p>
-                      </a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="" class="nav-link ">
-                          <i class="nav-icon fa fa-user-edit"></i>
-                          <p>Permission</p>
-                      </a>
-                  </li>
+                  </li> --}}
+
+                  @can('system-access')
+                      <li class="nav-header">SYSTEM CONTROL</li>
+                      <li class="nav-item">
+                          <a href="" class="nav-link ">
+                              <i class="nav-icon fa fa-users"></i>
+                              <p>Users</p>
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="" class="nav-link ">
+                              <i class="nav-icon fa fa-user-cog"></i>
+                              <p>Roles</p>
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="" class="nav-link ">
+                              <i class="nav-icon fa fa-user-edit"></i>
+                              <p>Permission</p>
+                          </a>
+                      </li>
+                  @endcan
                   <li class="nav-header">MISCELLANEOUS</li>
                   <li class="mt-2 nav-item pt-2" style="border-top: 1px solid #4f5962;">
                       <a href="{{ route('logout') }}" class="nav-link"

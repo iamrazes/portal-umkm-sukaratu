@@ -20,12 +20,16 @@ Route::get('/', function () {
 })->name('welcome');
 
 Route::get('/umkm', function () {
-    return view('umkm.index');
+    return view('pages.umkm.index');
 })->name('umkm');
 
 Route::get('/contact', function () {
-    return view('contact');
+    return view('pages.contact.index');
 })->name('contact');
+
+Route::get('/about', function () {
+    return view('pages.about.index');
+})->name('about');
 
 Route::get('/dashboard', function () {
     return view('admin.index');
@@ -33,7 +37,16 @@ Route::get('/dashboard', function () {
 
 Route::middleware(['auth', 'verified'])->group(function () {
 
-    Route::resource('/products', ProductController::class);
+    // Route::resource('/products', ProductController::class)->except(['show']);
+    Route::resource('/products', ProductController::class)->names([
+        'index' => 'products.index',
+        'create' => 'products.create',
+        'store' => 'products.save',
+        'destroy' => 'products.destroy',
+        'edit' => 'products.edit',
+        'update' => 'products.update',
+        'show' => 'products.show'
+    ]);
 });
 
 Route::middleware('auth')->group(function () {
