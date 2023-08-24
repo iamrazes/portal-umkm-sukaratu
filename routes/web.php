@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -46,6 +47,16 @@ Route::middleware(['auth', 'verified'])->group(function () {
         'edit' => 'products.edit',
         'update' => 'products.update',
         'show' => 'products.show'
+    ]);
+
+    Route::resource('/users', UserController::class)->names([
+        'index' => 'users.index',
+        'create' => 'users.create',
+        'store' => 'users.save',
+        'destroy' => 'users.destroy',
+        'edit' => 'users.edit',
+        'update' => 'users.update',
+        'show' => 'users.show'
     ]);
 });
 

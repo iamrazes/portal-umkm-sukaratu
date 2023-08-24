@@ -1,4 +1,4 @@
-<x-guest-layout>
+{{-- <x-guest-layout>
     <form method="POST" action="{{ route('register') }}">
         @csrf
 
@@ -49,4 +49,23 @@
             </x-primary-button>
         </div>
     </form>
-</x-guest-layout>
+</x-guest-layout> --}}
+
+@extends('layouts.auth')
+
+@section('title')
+    <title>Portal UMKM Desa Sukaratu</title>
+@endsection
+
+@section('content')
+    <div class="justify-center text-center" style="
+margin: auto;
+    width: 50%;
+  padding: 100px 0;">
+        <h1><b>FORBIDDEN!</b></h1>
+        <p>Registrasi user hanya dapat dilakukan oleh Admin!</p>
+
+        <a href="{{ route('welcome') }}" class="btn border-0 " style="background-color: white;">Kembali</a>
+        <a href="{{ route('login') }}" class="btn border-0 " style="background-color: white;">Login</a>
+    </div>
+@endsection

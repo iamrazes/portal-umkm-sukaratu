@@ -25,16 +25,6 @@
 @endsection
 
 @section('content')
-    @if ($errors->any())
-        <div class="alert alert-danger">
-            <strong>Whoops!</strong> There were some problems with your input.<br><br>
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif
 
     <div class="content ml-2 mr-2 pb-2 ">
         <div class="card card-info">
@@ -44,9 +34,9 @@
             <div class="card-body">
 
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label"></label>
-                    <div class="col-sm-10">
-                        <img src="{{ asset('storage/image/' . $products->image) }}" alt="">
+                    <label class="col-sm-2 col-form-label">Foto Produk</label>
+                    <div class="col-sm-10 text-center">
+                        <img src="{{ asset('storage/productsImages/' . $products->image) }}" style="width: 256px; height: 256px; object-fit: cover;">
                     </div>
                 </div>
                 <div class="form-group row">
@@ -99,6 +89,9 @@
                     </div>
                 </div>
 
+            </div>
+            <div class="card-footer">
+                <a href="{{ route('products.index')}}" class="btn btn-danger">Kembali</a>
             </div>
 
         </div>

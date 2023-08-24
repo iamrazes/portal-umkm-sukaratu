@@ -94,13 +94,15 @@
                         <input type="text" name="others" class="form-control" placeholder="Keterangan lainnya..." value="{{ $products->others }}">
                     </div>
                 </div>
-                <div class="form-group row">
+                {{-- <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Foto Produk</label>
                     <div class="col-sm-10">
-
+                        <div class="col-sm-10 text-center">
+                            <img src="{{ asset('storage/productsImages/' . $products->image) }}" style="width: 256px; height: 256px; object-fit: cover;">
+                        </div>
                         <input type="file" name="image">
                     </div>
-                </div>
+                </div> --}}
 
 
 

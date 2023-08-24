@@ -66,12 +66,13 @@
                   @can('system-access')
                       <li class="nav-header">SYSTEM CONTROL</li>
                       <li class="nav-item">
-                          <a href="" class="nav-link ">
+                          <a href="{{route('users.index')}}" class="nav-link {{ request()->routeIs('users.*') ? 'active' : '' }}">
                               <i class="nav-icon fa fa-users"></i>
                               <p>Users</p>
                           </a>
                       </li>
-                      <li class="nav-item">
+
+                      {{-- <li class="nav-item">
                           <a href="" class="nav-link ">
                               <i class="nav-icon fa fa-user-cog"></i>
                               <p>Roles</p>
@@ -82,7 +83,7 @@
                               <i class="nav-icon fa fa-user-edit"></i>
                               <p>Permission</p>
                           </a>
-                      </li>
+                      </li> --}}
                   @endcan
                   <li class="nav-header">MISCELLANEOUS</li>
                   <li class="mt-2 nav-item pt-2" style="border-top: 1px solid #4f5962;">

@@ -46,7 +46,7 @@ class ProductController extends Controller
 
         $randomString = Str::random(10);
         $imgName = $randomString . str_replace(' ', '-', $request->file('image')->getClientOriginalName());
-        $dir = 'public/image';
+        $dir = 'public/productsImages';
         //   dd($imgName);
 
         $request->file('image')->storeAs($dir, $imgName);
@@ -54,7 +54,7 @@ class ProductController extends Controller
 
         Product::create([
             'name' => $request->name,
-            'cover'=> $imgName,
+            'image'=> $imgName,
             'description' => $request->description,
             'price' => $request->price,
             'owner' => $request->owner,
@@ -91,12 +91,21 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $request->validate([
+            'name' => ['required'],
+            // 'image' => ['required', 'image', 'mimes:jpeg,png,jpg,gif,svg', 'max:2048'],
+            'description' => ['required'],
+            'price' => ['required'],
+            'owner' => ['required'],
+            'address' => ['required'],
+            'whatsapp' => ['required']
+        ]);
 
         $products = Product::findOrFail($id);
 
         $products->update([
             'name' => $request->name,
-            'image' => $request->image,
+            // 'image'=> $imgName,
             'description' => $request->description,
             'price' => $request->price,
             'owner' => $request->owner,
@@ -116,10 +125,10 @@ class ProductController extends Controller
 
         $products = Product::findOrFail($id);
 
-        if (Storage::disk('local')->exists('public/image/' . $products->image)) {
-            Storage::disk('local')->delete('public/image/' . $products->image);
-        }
-
+        // if (Storage::disk('local')->exists('public/productsImages/' . $products->image)) {
+        //     Storage::disk('local')->delete('public/productsImages/' . $products->image);
+        // }
+        unlink(storage_path('app/public/productsImages/'.$products->image));
         $products->delete();
 
         return redirect()->route('products.index')->with('status', 'Data has been removed!');
