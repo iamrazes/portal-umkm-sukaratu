@@ -14,21 +14,45 @@
     <link rel="stylesheet" href="{{ asset('adminlte/plugins/fontawesome-free/css/all.min.css') }}">
 
     <link rel="stylesheet" href="{{ asset('adminlte/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('bootstrap/bootstrap.min.css')}}">
+    <style>
 
-    <link rel="stylesheet" href="{{ asset('adminlte/dist/css/adminlte.min.css?v=3.2.0') }}">
+        .form-signin {
+            max-width: 330px;
+            padding: 1rem;
+            padding-top: 100px;
+        }
+
+        .form-signin .form-floating:focus-within {
+            z-index: 2;
+        }
+
+        .form-signin input[type="email"] {
+            margin-bottom: -1px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        .form-signin input[type="password"] {
+            margin-bottom: 10px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+    </style>
 </head>
 
-<body class="login-page" style="background-color: #F1BB69">
+<body class="d-flex align-items-center py-4 bg-body-tertiary">
     @yield('content')
 
 
 
 
-    <script src="{{ asset('adminlte/plugins/jquery/jquery.min.js')}}"></script>
+    <script src="{{ asset('adminlte/plugins/jquery/jquery.min.js') }}"></script>
 
-    <script src="{{ asset('adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{ asset('adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
-    <script src="{{ asset('adminlte/dist/js/adminlte.min.js?v=3.2.0')}}"></script>
+    <script src="{{ asset('adminlte/dist/js/adminlte.min.js?v=3.2.0') }}"></script>
     @yield('script')
 </body>
 

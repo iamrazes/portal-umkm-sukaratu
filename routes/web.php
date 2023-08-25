@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\IndexController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,10 +16,6 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/', function () {
-    return view('index');
-})->name('welcome');
 
 Route::get('/umkm', function () {
     return view('pages.umkm.index');
@@ -35,6 +32,15 @@ Route::get('/about', function () {
 Route::get('/dashboard', function () {
     return view('admin.index');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+// Route::get('/', function () {
+//     return view('index');
+// })->name('welcome');
+
+
+Route::resource('/', IndexController::class)->names([
+    'index' => 'welcome'
+]);
 
 Route::middleware(['auth', 'verified'])->group(function () {
 
