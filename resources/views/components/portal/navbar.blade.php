@@ -11,16 +11,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="#profil">PROFIL</a>
+                            <a class="nav-link" href="{{ route('welcome') }}#profil">PROFIL</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="#fasilitas">FASILITAS</a>
+                            <a class="nav-link" href="{{ route('welcome') }}#fasilitas">FASILITAS</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="#lokasi">LOKASI</a>
+                            <a class="nav-link" href="{{ route('welcome') }}#lokasi">LOKASI</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="#umkm">UMKM</a>
+                            <a class="nav-link" href="{{ route('welcome') }}#umkm">UMKM</a>
                         </li>
                         <li class="nav-item me-3">
                             <a class="nav-link" href="{{ route('contact') }}">KONTAK</a>

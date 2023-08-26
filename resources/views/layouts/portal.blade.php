@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="{{ asset('adminlte/plugins/fontawesome-free/css/all.min.css')}}">
     <link rel="stylesheet" href="{{ asset('style.css') }}">
     @yield('head')
-    <title>Portal UMKM Desa Sukaratu</title>
+
+    @yield('title')
 </head>
 
 <body class="antialiased">

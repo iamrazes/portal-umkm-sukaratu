@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\UmkmController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,17 +18,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/umkm', function () {
-    return view('pages.umkm.index');
-})->name('umkm');
+Route::get('/about', function () {
+    return view('pages.about');
+})->name('about');
+
+Route::get('/blog', function () {
+    return view('pages.blog');
+})->name('blog');
 
 Route::get('/contact', function () {
-    return view('pages.contact.index');
+    return view('pages.contact');
 })->name('contact');
-
-Route::get('/about', function () {
-    return view('pages.about.index');
-})->name('about');
 
 Route::get('/dashboard', function () {
     return view('admin.index');
@@ -37,6 +38,10 @@ Route::get('/dashboard', function () {
 //     return view('index');
 // })->name('welcome');
 
+Route::resource('/umkm', UmkmController::class)->names([
+    'index' => 'umkm.index',
+    'show' => 'umkm.show'
+]);
 
 Route::resource('/', IndexController::class)->names([
     'index' => 'welcome'

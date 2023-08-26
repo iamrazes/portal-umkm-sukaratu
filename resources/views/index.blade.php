@@ -1,5 +1,9 @@
 @extends('layouts.portal')
 
+@section('title')
+    <title>Portal UMKM Desa Sukaratu</title>
+@endsection
+
 @section('content')
     <div class="container">
         <section class="hero" id="home">
@@ -12,7 +16,7 @@
                         Memajukan Masyarakat, Mensejahterakan Ekonomi, dan Mempromosikan Hasil Pangan Masyarakat Desa Sukaratu
                         dengan Gerakan Digitalisasi Desa.
                     </p>
-                    <a href="{{ route('contact') }}" class="btn">BERGABUNG</a>
+                    <a href="{{ route('blog') }}" class="btn">BERGABUNG</a>
                 </div>
             </main>
             <div class="d-flex flex-col" style="padding-left: 50px;">
@@ -32,7 +36,7 @@
     <div class="divider">
     </div>
     {{-- Profil Desa --}}
-    <div class="container" id="profil">
+    <div class="container" style="padding-top: 40px;" id="profil">
         <div class="hero2">
             <h1 class="text-center">PROFIL DESA</h1>
             <h2 class="text-center">MENGENAL DESA SUKARATU</h2>
@@ -135,7 +139,7 @@
                                 volutpat dignissim. Praesent justo neque, interdum non posuere non</p>
                         </div>
                         <div class="mt-5 text-end" style="padding-top: 40px;">
-                            <a href="" class="btn text-white" style="background-color: #F1BB69">Selengkapnya</a>
+                            <a href="" class="btn text-white btn-portal2">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -155,7 +159,7 @@
                                 volutpat dignissim. Praesent justo neque, interdum non posuere non</p>
                         </div>
                         <div class="mt-5 text-end" style="padding-top: 40px;">
-                            <a href="" class="btn text-white" style="background-color: #F1BB69">Selengkapnya</a>
+                            <a href="" class="btn text-white btn-portal2">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -174,7 +178,7 @@
                                 volutpat dignissim. Praesent justo neque, interdum non posuere non</p>
                         </div>
                         <div class="mt-5 text-end" style="padding-top: 40px;">
-                            <a href="" class="btn text-white" style="background-color: #F1BB69">Selengkapnya</a>
+                            <a href="" class="btn text-white btn-portal2">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -193,7 +197,7 @@
                                 volutpat dignissim. Praesent justo neque, interdum non posuere non</p>
                         </div>
                         <div class="mt-5 text-end" style="padding-top: 40px;">
-                            <a href="" class="btn text-white" style="background-color: #F1BB69">Selengkapnya</a>
+                            <a href="" class="btn text-white btn-portal2">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -268,8 +272,8 @@
                                     {{ $item->description }}</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn text-white"
-                                            style="background-color: #AF6C08;">Lebih Lengkap</button>
+                                        <a type="button" class="btn text-white btn-portal"  href="{{ route('umkm.show', $item->id) }}"
+                                            style="">Lebih Lengkap</a>
                                     </div>
                                     <small style="color: #AF6C08;"><b>Rp. {{ $item->price }}</b></small>
                                 </div>
@@ -279,8 +283,8 @@
                 @endforeach
             </div>
             <div class="d-flex justify-content-center text-center mt-5">
-                <a href="{{ route('umkm') }}" class="btn"
-                    style="background-color:#AF6C08; color: white; padding: 20px; padding-left: 100px; padding-right: 100px;">Produk
+                <a href="{{ route('umkm.index') }}" class="btn btn-portal"
+                    style=" color: white; padding: 20px; padding-left: 100px; padding-right: 100px;">Produk
                     Lainnya</a>
             </div>
 

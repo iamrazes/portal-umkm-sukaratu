@@ -70,25 +70,30 @@
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Pemilik</label>
                         <div class="col-sm-10">
-                            <input type="text" name="owner" class="form-control" placeholder="Pemilik Produk UMKM">
+                            <input type="text" name="owner" class="form-control" placeholder="Pemilik Produk UMKM" autocomplete="off">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Alamat</label>
                         <div class="col-sm-10">
-                            <input type="text" name="address" class="form-control" placeholder="Alamat UMKM">
+                            <input type="text" name="address" class="form-control" placeholder="Alamat UMKM" autocomplete="off">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">WhatsApp</label>
                         <div class="col-sm-10">
-                            <input type="number" name="whatsapp" class="form-control" placeholder="Nomor WhatsApp">
+                            <input type="number" id="noZeroOrMinusInput" name="whatsapp" class="form-control" autocomplete="off"
+                                placeholder="Nomor WhatsApp">
+                            <small class="text-secondary">Format nomor seperti berikut | Contoh :
+                                6289544445555</small>
+                            <small id="errorText" style="color: red;"></small>
                         </div>
+
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Lainnya</label>
                         <div class="col-sm-10">
-                            <input type="text" name="others" class="form-control" placeholder="Keterangan lainnya...">
+                            <input type="text" name="others" class="form-control" placeholder="Keterangan lainnya..." autocomplete="off">
                         </div>
                     </div>
                     <div class="form-group row">
@@ -111,4 +116,32 @@
 @endsection
 
 @section('script')
+    <script>
+        var inputElement = document.getElementById("noZeroOrMinusInput");
+        var errorTextElement = document.getElementById("errorText");
+
+        inputElement.addEventListener("input", function(event) {
+            var inputValue = event.target.value;
+
+            // Melarang angka 0 pada urutan pertama
+            if (inputValue.length === 1 && inputValue === "0") {
+                event.target.value = "";
+                errorTextElement.textContent = "Angka 0 tidak diperbolehkan pada urutan pertama.";
+                return;
+            } else {
+                errorTextElement.textContent = "";
+            }
+
+            // Melarang tanda minus ("-")
+            var sanitizedValue = inputValue.replace(/-/g, "");
+            inputElement.value = sanitizedValue;
+
+            // Menampilkan pesan kesalahan untuk tanda minus
+            if (inputValue !== sanitizedValue) {
+                errorTextElement.textContent = "Tanda minus (-) tidak diperbolehkan.";
+            } else {
+                errorTextElement.textContent = "";
+            }
+        });
+    </script>
 @endsection

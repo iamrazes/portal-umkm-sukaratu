@@ -24,6 +24,9 @@
     padding-bottom: 15px;
     font-weight: bold;
 }
+.navbar .btn:hover{
+    background-color: #AF6C08;
+}
 
 .heroimage1 {
     object-fit: cover;
@@ -111,7 +114,9 @@ body{
     border-radius: 50px;
     font-weight: bold;
 }
-
+.hero .content .btn:hover {
+    background-color: #AF6C08;
+}
 .hero2{
     color: black;
     text-align: center;
@@ -164,8 +169,7 @@ font-weight: 700;
 
 .divider {
     background-color: #F1BB69;
-    height: 200px;
-    margin-bottom: 40px;
+    height: 300px;
 }
 
 .carousel-inner {
@@ -229,15 +233,6 @@ font-weight: 700;
     text-align: end;
 }
 
-.social{
-    margin-left: 12px;
-}
-
-.footer a{
-        color: #F1BB69;
-
-}
-
 .umkm h1{
     color: #3D3D3D;
 font-family: inherit;
@@ -271,7 +266,7 @@ margin-bottom: 40px;
     transform: translateY(-50%);
   }
 
-  .vertical-item-center {
+.vertical-item-center {
     margin: 0;
     position: relative;
     top: 50%;
@@ -279,3 +274,86 @@ margin-bottom: 40px;
     transform: translateY(-50%);
   }
 
+  .wa-center {
+    /* margin: 0; */
+    position: relative;
+    top: 20%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+.whatsapp {
+    background-color: #00A400;
+    border-radius: 48px;
+    height: 80px;
+    width: 360px;
+    font-weight: bold;
+    color: white;
+    font-family: inherit;
+    text-decoration: none;
+
+}
+.whatsapp:hover {
+    background-color: rgb(158, 226, 158);
+}
+
+.btn-portal {
+    background-color: #AF6C08;
+}
+.btn-portal:hover {
+    background-color: #F1BB69;
+}
+.btn-portal2 {
+    background-color: #F1BB69;
+}
+.btn-portal2:hover {
+    background-color: #AF6C08;
+}
+
+.footer a{
+    color: white;
+}
+
+.footer a:hover{
+    color: #F1BB69;
+}
+
+.social {
+    margin-left: 12px;
+}
+
+.about h1{
+    font-family: inherit;
+    color: #3D3D3D;
+    font-weight: 700;
+    font-size: 52px;
+}
+
+.about h2{
+    font-family: inherit;
+    color: #AF6C08;
+    font-weight: 700;
+    font-size: 38px;
+}
+.about h3{
+    color: #3D3D3D;
+    margin-top: 20px;;
+}
+.about h4{
+    color: #3D3D3D;
+}
+.about p{
+    color: #3D3D3D;
+}
+.aboutcover {
+    height: 560px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.imgprofil {
+    height: 240px;
+    width: 240px;
+    object-fit: cover;
+    border-radius: 100%;
+}
