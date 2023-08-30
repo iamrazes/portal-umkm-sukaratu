@@ -84,7 +84,7 @@
                 </div>
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">WhatsApp</label>
-                    
+
                     <div class="col-sm-10">
                         <input type="number" id="noZeroOrMinusInput" name="whatsapp" class="form-control" value="{{ $products->whatsapp }}"
                             placeholder="Nomor WhatsApp">

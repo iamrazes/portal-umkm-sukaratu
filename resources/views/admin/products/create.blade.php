@@ -57,8 +57,8 @@
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Deskripsi</label>
                         <div class="col-sm-10">
-                            <textarea type="text" name="description" class="form-control" placeholder="Deskripsi Produk UMKM"></textarea>
-
+                            <textarea type="text" name="description" class="form-control" placeholder="Deskripsi Produk UMKM">
+                            </textarea>
                         </div>
                     </div>
                     <div class="form-group row">
@@ -88,7 +88,6 @@
                                 6289544445555</small>
                             <small id="errorText" style="color: red;"></small>
                         </div>
-
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Lainnya</label>
@@ -116,32 +115,32 @@
 @endsection
 
 @section('script')
-    <script>
-        var inputElement = document.getElementById("noZeroOrMinusInput");
-        var errorTextElement = document.getElementById("errorText");
+<script>
+    var inputElement = document.getElementById("noZeroOrMinusInput");
+    var errorTextElement = document.getElementById("errorText");
 
-        inputElement.addEventListener("input", function(event) {
-            var inputValue = event.target.value;
+    inputElement.addEventListener("input", function(event) {
+        var inputValue = event.target.value;
 
-            // Melarang angka 0 pada urutan pertama
-            if (inputValue.length === 1 && inputValue === "0") {
-                event.target.value = "";
-                errorTextElement.textContent = "Angka 0 tidak diperbolehkan pada urutan pertama.";
-                return;
-            } else {
-                errorTextElement.textContent = "";
-            }
+        // Melarang angka 0 pada urutan pertama
+        if (inputValue.length === 1 && inputValue === "0") {
+            event.target.value = "";
+            errorTextElement.textContent = "Angka 0 tidak diperbolehkan pada urutan pertama.";
+            return;
+        } else {
+            errorTextElement.textContent = "";
+        }
 
-            // Melarang tanda minus ("-")
-            var sanitizedValue = inputValue.replace(/-/g, "");
-            inputElement.value = sanitizedValue;
+        // Melarang tanda minus ("-")
+        var sanitizedValue = inputValue.replace(/-/g, "");
+        inputElement.value = sanitizedValue;
 
-            // Menampilkan pesan kesalahan untuk tanda minus
-            if (inputValue !== sanitizedValue) {
-                errorTextElement.textContent = "Tanda minus (-) tidak diperbolehkan.";
-            } else {
-                errorTextElement.textContent = "";
-            }
-        });
-    </script>
+        // Menampilkan pesan kesalahan untuk tanda minus
+        if (inputValue !== sanitizedValue) {
+            errorTextElement.textContent = "Tanda minus (-) tidak diperbolehkan.";
+        } else {
+            errorTextElement.textContent = "";
+        }
+    });
+</script>
 @endsection

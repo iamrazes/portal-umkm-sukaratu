@@ -15,7 +15,6 @@
                 </p>
             </div>
         </div>
-
         <div class="row mb-2">
             <div class="col-md-6">
                 <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
@@ -166,7 +165,7 @@
                     </ul>
 
                     <b>Posyandu</b>
-                    <p>tersebar di, : Kp. Cibinong, Kp. Nyalindung, Kp. Benong, Kp. Cibiuk, Kp. Cidogdog, Kp.
+                    <p>Tersebar di : Kp. Cibinong, Kp. Nyalindung, Kp. Benong, Kp. Cibiuk, Kp. Cidogdog, Kp.
                         Darmaga, Kp. Cikadu, Kp. Pangawaren, Kp. Rawakotok, Kp. Mekar Mulya, Kp. Sirnagalih, Kp. Cibinong 2,
                         Kp.
                         Citapen</p>
