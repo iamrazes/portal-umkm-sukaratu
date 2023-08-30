@@ -246,7 +246,7 @@
                 @foreach ($products as $item)
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img src="{{ asset('storage/public/productImages/' . $item->image) }}" width="100%"
+                            <img src="{{ asset('storage/public/productsImages/' . $item->image) }}" width="100%"
                                 height="280" style="object-fit: cover;">
                             {{-- <svg class="bd-placeholder-img card-img-top" width="100%" height="280"
                                 xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice"
