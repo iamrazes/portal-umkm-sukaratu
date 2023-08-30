@@ -9,14 +9,14 @@
         <div class="card col-sm-12">
             <div class="card-body shadow">
                 <div class="d-lg-flex col">
-                    <div class="p-2">
+                    <div class="p-2 text-center">
                         <img src="{{ asset('storage/public/productsImages/' . $products->image) }}"
-                            style="
+                    style="
                     width: 420px;
                     height: auto;
                     object-fit: cover;
                     "
-                            class="
+                    class="
                     rounded rounded-lg
                     ">
                     </div>
