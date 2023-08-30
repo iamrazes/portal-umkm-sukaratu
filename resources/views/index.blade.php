@@ -13,7 +13,8 @@
                     <h1>DESA SUKARATU </h1>
                     <p style="font-size: 16px;">
 
-                        Memajukan Masyarakat, Mensejahterakan Ekonomi, dan Mempromosikan Hasil Pangan Masyarakat Desa Sukaratu
+                        Memajukan Masyarakat, Mensejahterakan Ekonomi, dan Mempromosikan Hasil Pangan Masyarakat Desa
+                        Sukaratu
                         dengan Gerakan Digitalisasi Desa.
                     </p>
                     <a href="{{ route('blog') }}" class="btn">BERGABUNG</a>
@@ -56,7 +57,7 @@
                             <h1>Secara Umum Desa Sukaratu</h1>
                             <p>Desa Sukaratu merupakan salah satu Desa yang berada di Kecamatan Bojongpicung
                                 <br>dari jumlah total sebanyak 11 Desa. Desa Sukaratu manjadi satu - satunya Desa dengan
-                                <br> cakupan wilayah yang luas dengan  penduduk kurang lebih sebanyak 10.000 jiwa.
+                                <br> cakupan wilayah yang luas dengan penduduk kurang lebih sebanyak 10.000 jiwa.
                             </p>
                         </div>
                     </div>
@@ -130,35 +131,35 @@
                 <div class="card col-sm-3 mx-1">
                     <div class=" row justify-content-between card-body">
                         <div class="mb-4">
-                            <div class="rounded text-center"
-                                style=" height: 50px; width: 50px; background-color: #F1BB69">
+                            <div class="rounded text-center" style=" height: 50px; width: 50px; background-color: #F1BB69">
                                 <i class="fa fa-star text-white py-2 vertical-item-center"></i>
                             </div>
                         </div>
                         <div>
                             <h4>Pendidikan</h4>
-                            <p>Sarana pendidikan di Desa Sukaratu terbilang lengkap dari PAUD, SD, SMP, SMK dan sekolah agama yang tersebar dimana-mana seperti DTA dan TKA/RA dan beberapa Pondok Pesantren.</p>
+                            <p>Sarana pendidikan di Desa Sukaratu terbilang lengkap dari PAUD, SD, SMP, SMK dan sekolah
+                                agama yang tersebar dimana-mana seperti DTA dan TKA/RA dan beberapa Pondok Pesantren.</p>
                         </div>
                         <div class="mt-5 text-end" style="padding-top: 40px;">
-                            <a href="{{route('blog')}}#fasilitas" class="btn text-white btn-portal2">Selengkapnya</a>
+                            <a href="{{ route('blog') }}#fasilitas" class="btn text-white btn-portal2">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
                 <div class="card col-sm-3 mx-1">
                     <div class=" row justify-content-between card-body">
                         <div class="mb-4">
-                            <div class="rounded text-center"
-                                style=" height: 50px; width: 50px; background-color: #F1BB69">
+                            <div class="rounded text-center" style=" height: 50px; width: 50px; background-color: #F1BB69">
                                 <i class="fa fa-home text-white py-2 vertical-item-center"></i>
                             </div>
 
                         </div>
                         <div>
                             <h4>Posyandu</h4>
-                            <p>Posyandu tersebar di seluruh kampung di Desa Sukaratu dengan berbagai kegiatan posyandu yang aktif dan konsisten dilakukan setiap bulannya di setiap kampung.</p>
+                            <p>Posyandu tersebar di seluruh kampung di Desa Sukaratu dengan berbagai kegiatan posyandu yang
+                                aktif dan konsisten dilakukan setiap bulannya di setiap kampung.</p>
                         </div>
                         <div class="mt-5 text-end" style="padding-top: 40px;">
-                            <a href="{{route('blog')}}#fasilitas" class="btn text-white btn-portal2">Selengkapnya</a>
+                            <a href="{{ route('blog') }}#fasilitas" class="btn text-white btn-portal2">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -167,32 +168,33 @@
                         <div class="mb-4">
                             <div class="rounded text-center "
                                 style=" height: 50px; width: 50px; background-color: #F1BB69; ">
-                                <i class="fa fa-user-friends text-white py-2 vertical-item-center" ></i>
+                                <i class="fa fa-user-friends text-white py-2 vertical-item-center"></i>
                             </div>
                         </div>
                         <div>
                             <h4>Desa Siaga</h4>
-                            <p>Masyarakat Desa Sukaratu memiliki kemauan yang tinggi untuk saling membangun sesama warga desa, hadirnya program Desa Siaga yang menjadi wadah keinginan masyarakat.</p>
+                            <p>Masyarakat Desa Sukaratu memiliki kemauan yang tinggi untuk saling membangun sesama warga
+                                desa, hadirnya program Desa Siaga yang menjadi wadah keinginan masyarakat.</p>
                         </div>
                         <div class="mt-5 text-end" style="padding-top: 40px;">
-                            <a href="{{route('blog')}}#fasilitas" class="btn text-white btn-portal2">Selengkapnya</a>
+                            <a href="{{ route('blog') }}#fasilitas" class="btn text-white btn-portal2">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
                 <div class="card col-sm-3 mx-1 border-0" style="background-color: #F1BB69">
                     <div class="row justify-content-between card-body">
                         <div class="mb-4">
-                            <div class="rounded text-center"
-                                style=" height: 50px; width: 50px; background-color: white">
+                            <div class="rounded text-center" style=" height: 50px; width: 50px; background-color: white">
                                 <i class="fa fa-thumbs-up py-2 vertical-item-center" style="color: #F1BB69"></i>
                             </div>
                         </div>
                         <div>
                             <h4>Portal UMKM</h4>
-                            <p>Portal UMKM Desa Sukaratu merupakan program kerja KKN UNPI 2023 dalam gerakan digitalisasi desa untuk mempromosikan dan membangun perekonomian masyarakat.</p>
+                            <p>Portal UMKM Desa Sukaratu merupakan program kerja KKN UNPI 2023 dalam gerakan digitalisasi
+                                desa untuk mempromosikan dan membangun perekonomian masyarakat.</p>
                         </div>
                         <div class="mt-5 text-end" style="padding-top: 40px;">
-                            <a href="{{route('blog')}}#fasilitas" class="btn btn-white2">Selengkapnya</a>
+                            <a href="{{ route('blog') }}#fasilitas" class="btn btn-white2">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -256,9 +258,11 @@
                                     fill="#eceeef" dy=".3em">Thumbnail</text>
                             </svg> --}}
                             <div class="card-body">
-                                <h3 class="text-center" style="text-transform:uppercase;    white-space: nowrap;
+                                <h3 class="text-center"
+                                    style="text-transform:uppercase;    white-space: nowrap;
                                 overflow: hidden;
-                                text-overflow: ellipsis;"><b>{{ $item->name }}</b></h3>
+                                text-overflow: ellipsis;">
+                                    <b>{{ $item->name }}</b></h3>
                                 <p class="card-text"
                                     style="
                                 overflow: hidden;
@@ -268,10 +272,12 @@
                                 -webkit-box-orient: vertical;">
                                     {{ $item->description }}</p>
                                 <div class="d-md-flex justify-content-between flex-col align-items-center">
-                                    <div class="btn-group">
-                                        <a type="button" class="btn text-white btn-portal" href="{{ route('umkm.show', $item->id) }}"
-                                            style=" overflow: hidden;">Lebih Lengkap</a>
-                                    </div>
+                                    <a type="button" class="btn text-white btn-portal"
+                                        href="{{ route('umkm.show', $item->id) }}"
+                                        style=" overflow: hidden;
+                                            display: -webkit-box;
+                                            -webkit-line-clamp: 2;">Lebih
+                                        Lengkap</a>
 
                                     <p style="color: #AF6C08;"><b>Rp. {{ $item->price }}</b></p>
                                 </div>
