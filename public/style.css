@@ -351,6 +351,13 @@ margin-bottom: 40px;
     object-fit: cover;
 }
 
+.aboutcoversm {
+    width: auto;
+    height: 360px;
+    /* padding-right: 15px; */
+    object-fit: cover;
+}
+
 .imgprofil {
     /* width:  */
     max-width: 240px;

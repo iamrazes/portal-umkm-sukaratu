@@ -8,12 +8,12 @@
     <div class="container my-5">
         <div class="card col-sm-12">
             <div class="card-body shadow">
-                <div class="d-flex flex-row">
+                <div class="d-md-flex flex-row">
                     <div class="p-2">
                         <img src="{{ asset('storage/public/productsImages/' . $products->image) }}"
                             style="
-                    width: 420px;
-                    height: 100%;
+                    width: 320px;
+                    height: auto;
                     object-fit: cover;
                     "
                             class="
