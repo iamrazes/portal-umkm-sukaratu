@@ -129,7 +129,7 @@ class ProductController extends Controller
             Storage::disk('public')->delete('storage/public/productsImages/' . $products->image);
         }
         // unlink(storage_path('app/storage/public/productsImages/'.$products->image));
-        // $products->delete();
+        $products->delete();
 
         return redirect()->route('products.index')->with('status', 'Data has been removed!');
     }
