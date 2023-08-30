@@ -352,10 +352,12 @@ margin-bottom: 40px;
 }
 
 .imgprofil {
-    height: 240px;
-    width: 240px;
+    /* width:  */
+    max-width: 240px;
+    height: auto;
     object-fit: cover;
     border-radius: 100%;
+    position: relative;
 }
 
 .blog a{

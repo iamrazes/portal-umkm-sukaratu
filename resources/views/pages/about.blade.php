@@ -18,26 +18,26 @@
                 <h2>KELOMPOK 11</h2>
             </div>
         </div>
-        <div class="text-center  mt-5 t">
+        <div class="text-center  mt-5">
             <img src="{{ asset('images/about/arsyi.png') }}" class="imgprofil" alt="">
             <h3>M. Arsyi Putra</h3>
             <h4>Ketua Kelompok KKN</h4>
         </div>
         <h2 class="mb-5 mt-5 text-center">Developer</h2>
-        <div class="d-flex justify-content-between ">
-            <div class="text-center" style="padding-left: 200px;">
+        <div class="d-md-flex flex-col justify-content-around">
+            <div class="text-center">
                 <img src="{{ asset('images/about/razes.png') }}" class="imgprofil" alt="">
                 <h3>M. Dagistan Silawane</h3>
                 <h4>BackEnd Developer</h4>
             </div>
-            <div class="text-center" style="padding-right: 200px;">
+            <div class="text-center">
                 <img src="{{ asset('images/about/firly.png') }}" class="imgprofil" alt="">
                 <h3>Firly Andrian</h3>
                 <h4>FrontEnd Developer</p>
             </div>
         </div>
         <h2 class="mb-5 mt-5 text-center">Anggota IPM Ekonomi</h2>
-        <div class="d-flex flex-col justify-content-between">
+        <div class="d-md-flex flex-col justify-content-between">
             <div class="text-center">
                 <img src="{{ asset('images/about/razes.png') }}" class="imgprofil" alt="">
                 <h3>M. Dagistan Silawane</h3>
@@ -59,7 +59,7 @@
                 <h4></h4>
             </div>
         </div>
-        <div class="d-flex justify-content-around mt-4">
+        <div class="d-md-flex justify-content-around mt-4">
             <div class="text-center" style="padding-right: 20px;">
                 <img src="{{ asset('images/about/faizal.png') }}" class="imgprofil " alt="">
                 <h3>Faizal Arif Wibisana</h3>
@@ -72,8 +72,7 @@
             </div>
         </div>
 
-
-        <h2 class="mb-5 mt-5 text-center">Anggota KKN Kelompok 11</h2>
+        <h2 class="d-md-flex mb-5 mt-5 text-center">Anggota KKN Kelompok 11</h2>
         <div class="text-center my-2 mb-4"">
             <div class="text-center">
                 <img src="{{ asset('images/about/arsyi.png') }}" class="imgprofil" alt="">
@@ -81,10 +80,10 @@
                 <h4>Ketua Kelompok KKN</h4>
             </div>
         </div>
-        <div class="d-flex flex-col justify-content-between my-2 mb-4"">
+        <div class="d-md-flex flex-col justify-content-between my-2 mb-4">
             <div class="text-center">
                 <img src="{{ asset('images/about/farhan.png') }}" class="imgprofil" alt="">
-                <h3>Farhan</h3>
+                <h3>Farhan Fauzan</h3>
                 <h4>Divisi Acara</h4>
             </div>
             <div class="text-center">
@@ -103,7 +102,7 @@
                 <h4>Publikasi dan Dokumentasi</h4>
             </div>
         </div>
-        <div class="d-flex flex-col justify-content-between my-2 mb-4">
+        <div class="d-md-flex flex-col justify-content-between my-2 mb-4">
             <div class="text-center">
                 <img src="{{ asset('images/about/razes.png') }}" class="imgprofil" alt="">
                 <h3>M. Dagistan Silawane</h3>
@@ -125,7 +124,7 @@
                 <h4>Publikasi dan Dokumentasi</h4>
             </div>
         </div>
-        <div class="d-flex flex-col justify-content-between my-2 mb-4"">
+        <div class="d-md-flex flex-col justify-content-between my-2 mb-4">
             <div class="text-center">
                 <img src="{{ asset('images/about/faizal.png') }}" class="imgprofil" alt="">
                 <h3>Faizal Arif Wibisana</h3>
@@ -147,7 +146,7 @@
                 <h4>Divisi Logistik</h4>
             </div>
         </div>
-        <div class="d-flex flex-col justify-content-between my-2 mb-4"">
+        <div class="d-md-flex flex-col justify-content-between my-2 mb-4">
             <div class="text-center">
                 <img src="{{ asset('images/about/sri.png') }}" class="imgprofil" alt="">
                 <h3>Sri Wahyuni</h3>
