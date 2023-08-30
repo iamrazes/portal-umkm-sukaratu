@@ -13,7 +13,7 @@
                         <img src="{{ asset('storage/public/productsImages/' . $products->image) }}"
                     style="
                     width: 420px;
-                    height: auto;
+                    height: 420px;
                     object-fit: cover;
                     "
                     class="
