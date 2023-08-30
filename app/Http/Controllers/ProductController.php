@@ -49,7 +49,7 @@ class ProductController extends Controller
         $dir = 'public/productsImages';
         //   dd($imgName);
 
-        $request->file('image')->storeAs($dir, $imgName);
+        $request->file('image')->storeAs($dir, $imgName, 'public');
         //  $request->file('image')->move(public_path('storage/image'), $imgName);
 
         Product::create([
