@@ -72,7 +72,7 @@
             </div>
         </div>
 
-        <h2 class="d-md-flex mb-5 mt-5 text-center">Anggota KKN Kelompok 11</h2>
+        <h2 class="mb-5 mt-5 text-center">Anggota KKN Kelompok 11</h2>
         <div class="text-center my-2 mb-4"">
             <div class="text-center">
                 <img src="{{ asset('images/about/arsyi.png') }}" class="imgprofil" alt="">
