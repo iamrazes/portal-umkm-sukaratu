@@ -126,7 +126,7 @@
                 font-weight: 700;
                 margin-bottom: 40px;">
                 FASILITAS DESA</h2>
-            <div class="d-flex">
+            <div class="col">
                 <div class="card col-sm-3 mx-1">
                     <div class=" row justify-content-between card-body">
                         <div class="mb-4">

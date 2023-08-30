@@ -30,7 +30,7 @@
                 {{-- @if ($loop->first) --}}
                 <div class="small-box bg-info">
                     <div class="inner">
-                        <h3>{{count($products)}}</sup></h3>
+                        <h3>{{ count($products) }}</sup></h3>
                         <p>Total Produk</p>
                     </div>
                     <div class="icon">
@@ -48,14 +48,12 @@
                 <div class="small-box bg-success">
                     <div class="inner">
                         <h3>
-                            @foreach ($products as $item )
-                            @if ($loop->last)
-
-                            {{$item->name}}
-
-
-                            @endif
-                            @endforeach</h3>
+                            @foreach ($products as $item)
+                                @if ($loop->last)
+                                    {{ $item->name }}
+                                @endif
+                            @endforeach
+                        </h3>
                         <p>Barang Terbaru</p>
                     </div>
                     <div class="icon">
@@ -70,14 +68,16 @@
 
                 <div class="small-box bg-warning">
                     <div class="inner">
-                        <h3>{{count($users)}}</h3>
+                        <h3>{{ count($users) }}</h3>
                         <p>Jumlah User</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-person-add"></i>
                     </div>
-                    <a href="{{ route('users.index') }}" class="small-box-footer">More info <i
-                            class="fas fa-arrow-circle-right"></i></a>
+                    @can('system-access')
+                        <a href="{{ route('users.index') }}" class="small-box-footer">More info <i
+                                class="fas fa-arrow-circle-right"></i></a>
+                    @endcan
                 </div>
             </div>
 
@@ -91,7 +91,11 @@
                     <div class="icon">
                         <i class="ion ion-pie-graph"></i>
                     </div>
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+
+                    @can('system-access')
+                        <a href="{{ route('users.index') }}" class="small-box-footer">More info <i
+                                class="fas fa-arrow-circle-right"></i></a>
+                    @endcan
                 </div>
             </div>
 
