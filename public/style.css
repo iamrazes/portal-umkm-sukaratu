@@ -352,9 +352,6 @@ margin-bottom: 40px;
 }
 
 .aboutcoversm {
-    width: auto;
-    height: 360px;
-    /* padding-right: 15px; */
     object-fit: cover;
 }
 
