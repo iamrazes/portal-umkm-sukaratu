@@ -271,15 +271,15 @@
                                         line-clamp: 2;
                                 -webkit-box-orient: vertical;">
                                     {{ $item->description }}</p>
-                                <div class="d-md-flex justify-content-between flex-col align-items-center">
-                                    <a type="button" class="btn text-center text-white btn-portal"
-                                        href="{{ route('umkm.show', $item->id) }}"
-                                        style=" overflow: hidden;
-                                        display: -webkit-box;
-                                        -webkit-line-clamp: 2;">Lebih
-                                        Lengkap</a>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a type="button" class="btn text-center text-white btn-portal"
+                                            href="{{ route('umkm.show', $item->id) }}"
+                                            style=" overflow: hidden;
+                                            display: -webkit-box;
+                                            -webkit-line-clamp: 2;">Lebih
+                                            Lengkap</a>
 
-                                    <p class="text-center" style="color: #AF6C08;"><b>Rp. {{ $item->price }}</b></p>
+                                        <p class="text-center" style="color: #AF6C08;"><b>Rp. {{ $item->price }}</b></p>
                                 </div>
                             </div>
                         </div>
