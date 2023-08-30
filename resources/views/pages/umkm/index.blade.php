@@ -23,7 +23,9 @@
                                 fill="#eceeef" dy=".3em">Thumbnail</text>
                         </svg> --}}
                         <div class="card-body">
-                            <h3 class="text-center" style="text-transform:uppercase;"><b>{{ $item->name }}</b></h3>
+                            <h3 class="text-center" style="text-transform:uppercase;     white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;"><b>{{ $item->name }}</b></h3>
                             <p class="card-text"
                                 style="
                             overflow: hidden;
