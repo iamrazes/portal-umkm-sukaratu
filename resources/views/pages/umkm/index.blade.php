@@ -37,9 +37,10 @@
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <a type="button" class="btn text-white btn-portal" href="{{ route('umkm.show', $item->id) }}"
-                                        >Lebih Lengkap</a>
+                                        style=" overflow: hidden;">Lebih Lengkap</a>
                                 </div>
-                                <small style="color: #AF6C08;"><b>Rp. {{ $item->price }}</b></small>
+
+                                <p style="color: #AF6C08;"><b>Rp. {{ $item->price }}</b></p>
                             </div>
                         </div>
                     </div>
