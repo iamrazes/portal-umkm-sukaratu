@@ -125,11 +125,11 @@ class ProductController extends Controller
 
         $products = Product::findOrFail($id);
 
-        // if (Storage::disk('local')->exists('storage/public/productsImages/' . $products->image)) {
-        //     Storage::disk('local')->delete('storage/public/productsImages/' . $products->image);
-        // }
-        unlink(storage_path('app/storage/public/productsImages/'.$products->image));
-        $products->delete();
+        if (Storage::disk('public')->exists('storage/public/productsImages/' . $products->image)) {
+            Storage::disk('public')->delete('storage/public/productsImages/' . $products->image);
+        }
+        // unlink(storage_path('app/storage/public/productsImages/'.$products->image));
+        // $products->delete();
 
         return redirect()->route('products.index')->with('status', 'Data has been removed!');
     }
