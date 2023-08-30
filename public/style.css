@@ -346,12 +346,14 @@ margin-bottom: 40px;
     color: #3D3D3D;
 }
 .aboutcover {
-    height: 560px;
+    height: 50%;
     width: 100%;
     object-fit: cover;
 }
 
 .aboutcoversm {
+    height: 50%;
+    width: auto;
     object-fit: cover;
 }
 

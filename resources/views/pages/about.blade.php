@@ -10,8 +10,8 @@
         <div>
             <img src="{{ asset('images/about1.jpg') }}" alt="" class="aboutcover my-4">
             <div class="d-flex justify-content-between mb-4">
-                <img src="{{asset('images/about2.jpg')}}" style="width: 50%; height: 360px;  object-fit: cover;" alt="">
-                <img src="{{asset('images/about3.jpg')}}" style="width: 50%; height: 360px;  object-fit: cover;" alt="">
+                <img src="{{asset('images/about2.jpg')}}" style="aboutcoversm" alt="">
+                <img src="{{asset('images/about3.jpg')}}" style="aboutcoversm" alt="">
             </div>
             <div class="text-center">
                 <h1>KKN UNPI 2023</h1>
