@@ -8,7 +8,7 @@
     <div class="container my-5">
         <div class="card col-sm-12">
             <div class="card-body shadow">
-                <div class="d-sm-flex col">
+                <div class="d-lg-flex col">
                     <div class="p-2">
                         <img src="{{ asset('storage/public/productsImages/' . $products->image) }}"
                             style="
