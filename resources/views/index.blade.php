@@ -21,11 +21,11 @@
             </main>
             <div class="d-flex flex-col" style="padding-left: 50px;">
                 <div>
-                    <img src="{{ asset('images/heroimage1.png') }}" class="heroimage1 d-none d-lg-block">
+                    <img src="{{ asset('images/hero1.png') }}" class="heroimage1 d-none d-lg-block">
                     <div class="heroimage1s d-none d-lg-block"></div>
                 </div>
                 <div>
-                    <img src="{{ asset('images/heroimage2.png') }}" class="heroimage2 d-none d-lg-block">
+                    <img src="{{ asset('images/hero2.jpg') }}" class="heroimage2 d-none d-lg-block">
                     <div class="heroimage2s d-none d-lg-block"></div>
                 </div>
             </div>
@@ -51,30 +51,33 @@
                 </div>
                 <div class="carousel-inner d-none d-md-block">
                     <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="{{ asset('images/blue.png') }}" class="carousel-img hover-zoom shadow " alt="...">
+                        <img src="{{ asset('images/slide1.jpg') }}" class="carousel-img hover-zoom shadow " alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h1>First slide label</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at varius purus. Mauris
-                                finibus<br>
-                                volutpat dignissim. Praesent justo neque, interdum non posuere non</p>
+                            <h1>Secara Umum Desa Sukaratu</h1>
+                            <p>Desa Sukaratu merupakan salah satu Desa yang berada di Kecamatan Bojongpicung
+                                <br>dari jumlah total sebanyak 11 Desa. Desa Sukaratu manjadi satu - satunya Desa dengan
+                                <br> cakupan wilayah yang luas dengan  penduduk kurang lebih sebanyak 10.000 jiwa.
+                            </p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img src="{{ asset('images/pink.png') }}" class="carousel-img hover-zoom shadow " alt="...">
+                        <img src="{{ asset('images/slide2.png') }}" class="carousel-img hover-zoom shadow " alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h1>Second slide label</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at varius purus. Mauris
-                                finibus<br>
-                                volutpat dignissim. Praesent justo neque, interdum non posuere non</p>
+                            <h1>Denah Sukaratu</h1>
+                            <p>Desa Sukaratu berlokasi cukup strategis dengan kantor desa berada di tengah pusat desa
+                                <br> dan jalan yang saling menghubungkan ke desa lain membuat desa sukaratu
+                                <br> mudah untuk di akses dari berbagai desa.
+                            </p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="{{ asset('images/orange.png') }}" class="carousel-img hover-zoom shadow " alt="...">
+                        <img src="{{ asset('images/slide3.jpg') }}" class="carousel-img hover-zoom shadow " alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h1>Third slide label</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at varius purus. Mauris
-                                finibus<br>
-                                volutpat dignissim. Praesent justo neque, interdum non posuere non</p>
+                            <h1>Sumber Daya Alam</h1>
+                            <p>Desa Sukaratu memiliki sumber daya alam yang unik, dengan wilayah yang dipenuhi oleh sawah
+                                <br>namun tumbuhan seperti pohon buah-buahan dapat tumbuh dengan subur dengan pohon pisang
+                                <br>sebagai tumbuhan nomor satu di desa sukaratu.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -125,7 +128,7 @@
                 FASILITAS DESA</h2>
             <div class="d-flex">
                 <div class="card col-sm-3 mx-1">
-                    <div class="card-body">
+                    <div class=" row justify-content-between card-body">
                         <div class="mb-4">
                             <div class="rounded text-center"
                                 style=" height: 50px; width: 50px; background-color: #F1BB69">
@@ -133,18 +136,16 @@
                             </div>
                         </div>
                         <div>
-                            <h4>Lorem Ipsum</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at varius purus. Mauris
-                                finibus
-                                volutpat dignissim. Praesent justo neque, interdum non posuere non</p>
+                            <h4>Pendidikan</h4>
+                            <p>Sarana pendidikan di Desa Sukaratu terbilang lengkap dari PAUD, SD, SMP, SMK dan sekolah agama yang tersebar dimana-mana seperti DTA dan TKA/RA dan beberapa Pondok Pesantren.</p>
                         </div>
                         <div class="mt-5 text-end" style="padding-top: 40px;">
-                            <a href="" class="btn text-white btn-portal2">Selengkapnya</a>
+                            <a href="{{route('blog')}}#fasilitas" class="btn text-white btn-portal2">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
                 <div class="card col-sm-3 mx-1">
-                    <div class="card-body">
+                    <div class=" row justify-content-between card-body">
                         <div class="mb-4">
                             <div class="rounded text-center"
                                 style=" height: 50px; width: 50px; background-color: #F1BB69">
@@ -153,37 +154,16 @@
 
                         </div>
                         <div>
-                            <h4>Lorem Ipsum</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at varius purus. Mauris
-                                finibus
-                                volutpat dignissim. Praesent justo neque, interdum non posuere non</p>
+                            <h4>Posyandu</h4>
+                            <p>Posyandu tersebar di seluruh kampung di Desa Sukaratu dengan berbagai kegiatan posyandu yang aktif dan konsisten dilakukan setiap bulannya di setiap kampung.</p>
                         </div>
                         <div class="mt-5 text-end" style="padding-top: 40px;">
-                            <a href="" class="btn text-white btn-portal2">Selengkapnya</a>
+                            <a href="{{route('blog')}}#fasilitas" class="btn text-white btn-portal2">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
                 <div class="card col-sm-3 mx-1">
-                    <div class="card-body">
-                        <div class="mb-4">
-                            <div class="rounded text-center"
-                                style=" height: 50px; width: 50px; background-color: #F1BB69">
-                                <i class="fa fa-thumbs-up text-white py-2 vertical-item-center"></i>
-                            </div>
-                        </div>
-                        <div>
-                            <h4>Lorem Ipsum</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at varius purus. Mauris
-                                finibus
-                                volutpat dignissim. Praesent justo neque, interdum non posuere non</p>
-                        </div>
-                        <div class="mt-5 text-end" style="padding-top: 40px;">
-                            <a href="" class="btn text-white btn-portal2">Selengkapnya</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-sm-3 mx-1">
-                    <div class="card-body">
+                    <div class=" row justify-content-between card-body">
                         <div class="mb-4">
                             <div class="rounded text-center "
                                 style=" height: 50px; width: 50px; background-color: #F1BB69; ">
@@ -191,13 +171,28 @@
                             </div>
                         </div>
                         <div>
-                            <h4>Lorem Ipsum</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at varius purus. Mauris
-                                finibus
-                                volutpat dignissim. Praesent justo neque, interdum non posuere non</p>
+                            <h4>Desa Siaga</h4>
+                            <p>Masyarakat Desa Sukaratu memiliki kemauan yang tinggi untuk saling membangun sesama warga desa, hadirnya program Desa Siaga yang menjadi wadah keinginan masyarakat.</p>
                         </div>
                         <div class="mt-5 text-end" style="padding-top: 40px;">
-                            <a href="" class="btn text-white btn-portal2">Selengkapnya</a>
+                            <a href="{{route('blog')}}#fasilitas" class="btn text-white btn-portal2">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-sm-3 mx-1 border-0" style="background-color: #F1BB69">
+                    <div class="row justify-content-between card-body">
+                        <div class="mb-4">
+                            <div class="rounded text-center"
+                                style=" height: 50px; width: 50px; background-color: white">
+                                <i class="fa fa-thumbs-up py-2 vertical-item-center" style="color: #F1BB69"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>Portal UMKM</h4>
+                            <p>Portal UMKM Desa Sukaratu merupakan program kerja KKN UNPI 2023 dalam gerakan digitalisasi desa untuk mempromosikan dan membangun perekonomian masyarakat.</p>
+                        </div>
+                        <div class="mt-5 text-end" style="padding-top: 40px;">
+                            <a href="{{route('blog')}}#fasilitas" class="btn btn-white2">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -272,7 +267,7 @@
                                     {{ $item->description }}</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <a type="button" class="btn text-white btn-portal"  href="{{ route('umkm.show', $item->id) }}"
+                                        <a type="button" class="btn text-white btn-portal" href="{{ route('umkm.show', $item->id) }}"
                                             style="">Lebih Lengkap</a>
                                     </div>
                                     <small style="color: #AF6C08;"><b>Rp. {{ $item->price }}</b></small>

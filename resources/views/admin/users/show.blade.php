@@ -44,13 +44,17 @@
                         <input type="text" class="form-control" autocomplete="off" value="{{ $users->email }}" readonly>
                     </div>
                 </div>
-                {{-- <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Password</label>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Roles</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" autocomplete="off" value="{{ $users->password }}"
-                            readonly>
+
+                        {{-- @foreach ($roles as $role) --}}
+                        @foreach($userRoles as $role)
+                        <input type="text" class="form-control" autocomplete="off" value="{{ $role->name }}" readonly>
+                        @endforeach
+                        {{-- @endforeach --}}
                     </div>
-                </div> --}}
+                </div>
                 {{-- <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Role</label>
                     <div class="col-sm-10">

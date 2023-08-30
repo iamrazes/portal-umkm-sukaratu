@@ -55,7 +55,7 @@
             <table id="example1" class="table table-bordered table-striped">
                 <thead>
                     <tr>
-                        <th>ID</th>
+                        <th>Nomor</th>
                         <th>Name</th>
                         <th>Email</th>
                         <th>Created at</th>
@@ -65,7 +65,7 @@
                 <tbody>
                     @foreach ($users as $item)
                         <tr>
-                            <td>{{ $item->id }}</td>
+                            <td></td>
                             <td>{{ $item->name }}</td>
                             <td>{{ $item->email }}</td>
                             <td>{{ $item->created_at }}</td>
@@ -124,4 +124,15 @@
             });
         });
     </script>
+    <script>
+        // Mengambil referensi tabel
+        var table = document.getElementById("example1");
+        var rows = table.getElementsByTagName("tr");
+
+        // Mengisi nomor urutan secara otomatis
+        for (var i = 1; i < rows.length; i++) {
+          var cell = rows[i].getElementsByTagName("td")[0];
+          cell.textContent = i;
+        }
+      </script>
 @endsection

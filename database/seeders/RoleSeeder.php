@@ -16,13 +16,13 @@ class RoleSeeder extends Seeder
     {
 
         $superadmin = Role::create([
-            'name'=>'super admin'
+            'name'=>'Super Admin'
 
 
         ]);
 
         $admin = Role::create([
-            'name'=>'admin'
+            'name'=>'Admin'
 
         ]);
 

@@ -25,8 +25,10 @@ class UserController extends Controller
 
     public function show($id)
     {
-        $users = User::find($id);
-        return view('admin.users.show', compact('users'));
+        $roles = Role::all();
+        $users = User::findOrFail($id);
+        $userRoles = $users->roles;
+        return view('admin.users.show', compact('users', 'roles', 'userRoles'));
 
     }
     public function store(Request $request)

@@ -4,6 +4,8 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UmkmController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,9 +24,9 @@ Route::get('/about', function () {
     return view('pages.about');
 })->name('about');
 
-Route::get('/blog', function () {
-    return view('pages.blog');
-})->name('blog');
+Route::resource('/blog', BlogController::class)->names([
+    'index' => 'blog',
+]);
 
 Route::get('/contact', function () {
     return view('pages.contact');
@@ -34,6 +36,9 @@ Route::get('/dashboard', function () {
     return view('admin.index');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::resource('/dashboard', DashboardController::class)->names([
+    'index' => 'dashboard',
+]);
 // Route::get('/', function () {
 //     return view('index');
 // })->name('welcome');
@@ -68,7 +73,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
         'edit' => 'users.edit',
         'update' => 'users.update',
         'show' => 'users.show'
-    ]);
+    ])->middleware('can:system-access');
 });
 
 Route::middleware('auth')->group(function () {

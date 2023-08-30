@@ -10,6 +10,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> --}}
     <link rel="stylesheet" href="{{ asset('bootstrap/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{ asset('adminlte/plugins/fontawesome-free/css/all.min.css')}}">
+    <link rel="icon" href="{{ asset('images/favicon.png') }}">
     <link rel="stylesheet" href="{{ asset('style.css') }}">
     @yield('head')
 

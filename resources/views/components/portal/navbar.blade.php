@@ -2,7 +2,7 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="{{ route('welcome') }}"> <img src="{{ asset('images/logo.png') }}"></a>
+                <a class="navbar-brand" href="{{ route('welcome') }}"> <img src="{{ asset('images/logo1.png') }}" style="height: 60px; width: 60px;"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -23,7 +23,7 @@
                             <a class="nav-link" href="{{ route('welcome') }}#umkm">UMKM</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="{{ route('contact') }}">KONTAK</a>
+                            <a class="nav-link" href="{{ route('about') }}">TENTANG KAMI</a>
                         </li>
                     </ul>
                     @if (Route::has('login'))

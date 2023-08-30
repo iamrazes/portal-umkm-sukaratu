@@ -26,29 +26,43 @@
         <div class="row">
             <div class="col-lg-3 col-6">
 
+                {{-- @foreach ($products as $item) --}}
+                {{-- @if ($loop->first) --}}
                 <div class="small-box bg-info">
                     <div class="inner">
-                        <h3>150</h3>
-                        <p>Total Products</p>
+                        <h3>{{count($products)}}</sup></h3>
+                        <p>Total Produk</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-bag"></i>
                     </div>
-                    <a href="{{route('products.index')}}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                    <a href="{{ route('products.index') }}" class="small-box-footer">More info <i
+                            class="fas fa-arrow-circle-right"></i></a>
                 </div>
+                {{-- @endif --}}
+                {{-- @endforeach --}}
             </div>
 
             <div class="col-lg-3 col-6">
 
                 <div class="small-box bg-success">
                     <div class="inner">
-                        <h3>53<sup style="font-size: 20px">%</sup></h3>
-                        <p>Bounce Rate</p>
+                        <h3>
+                            @foreach ($products as $item )
+                            @if ($loop->last)
+
+                            {{$item->name}}
+
+
+                            @endif
+                            @endforeach</h3>
+                        <p>Barang Terbaru</p>
                     </div>
                     <div class="icon">
-                        <i class="ion ion-stats-bars"></i>
+                        <i class="fas fa-shopping-cart"></i>
                     </div>
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                    <a href="{{ route('products.index') }}" class="small-box-footer">More info <i
+                            class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
 
@@ -56,13 +70,14 @@
 
                 <div class="small-box bg-warning">
                     <div class="inner">
-                        <h3>44</h3>
-                        <p>User Registrations</p>
+                        <h3>{{count($users)}}</h3>
+                        <p>Jumlah User</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-person-add"></i>
                     </div>
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                    <a href="{{ route('users.index') }}" class="small-box-footer">More info <i
+                            class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
 
@@ -70,8 +85,8 @@
 
                 <div class="small-box bg-danger">
                     <div class="inner">
-                        <h3>65</h3>
-                        <p>Unique Visitors</p>
+                        <h3>{{ auth()->user()->roles->pluck('name')[0] ?? '' }}</h3>
+                        <p>Role Anda</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-pie-graph"></i>

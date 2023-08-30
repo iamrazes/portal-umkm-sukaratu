@@ -178,8 +178,8 @@ font-weight: 700;
 }
 
 .carousel-img {
-    height: 380px;
-    width: 380px;
+    height: 420px;
+    width: 420px;
     margin: 30px;
     text-align: center;
     border-radius: 50%;
@@ -191,7 +191,7 @@ font-weight: 700;
     /* margin-bottom: 20px; */
 }
 .carousel-caption h1{
-    font-size: 52px;
+    font-size: 42px;
     color: #3D3D3D;
 }
 .carousel-caption p{
@@ -356,4 +356,21 @@ margin-bottom: 40px;
     width: 240px;
     object-fit: cover;
     border-radius: 100%;
+}
+
+.blog a{
+    color: #F1BB69;
+    text-decoration: none;
+}
+.blog a:hover{
+    color: #AF6C08;
+    text-decoration: none;
+}
+
+.btn-white2 {
+    background-color: white;
+}
+
+.btn-white2:hover {
+    background-color: lightgrey;
 }
