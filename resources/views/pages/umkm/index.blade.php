@@ -37,14 +37,14 @@
                             -webkit-box-orient: vertical;">
                                     {{ $item->description }}</p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a type="button" class="btn text-white btn-portal"
+                                    <a type="button" class="btn text-center text-white btn-portal"
                                         href="{{ route('umkm.show', $item->id) }}"
                                         style=" overflow: hidden;
                                         display: -webkit-box;
                                         -webkit-line-clamp: 2;">Lebih
                                         Lengkap</a>
 
-                                    <p style="color: #AF6C08;"><b>Rp. {{ $item->price }}</b></p>
+                                    <p class="text-center" style="color: #AF6C08;"><b>Rp. {{ $item->price }}</b></p>
                                 </div>
                             </div>
                         </div>
