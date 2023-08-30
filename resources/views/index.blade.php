@@ -279,7 +279,7 @@
                                             -webkit-line-clamp: 2;">Lebih
                                             Lengkap</a>
 
-                                        <p class="text-center" style="color: #AF6C08;"><b>Rp. {{ $item->price }}</b></p>
+                                        <p class="text-center" style="color: #AF6C08;"><b>Rp. {{ number_format($item->price, 0, '.','.'),$item->price }}</b></p>
                                 </div>
                             </div>
                         </div>

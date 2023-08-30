@@ -33,7 +33,7 @@
                             <p>{{ $products->address }}</p>
 
                             <label style="font-weight: bold;">Harga :</label>
-                            <p>Rp. {{ $products->price }}</p>
+                            <p>Rp. {{ number_format($products->price, 0, '.','.'),$products->price }}</p>
 
                             <label style="font-weight: bold;">Cara Pemesanan :</label>
                             <div class="my-2 text-center">
