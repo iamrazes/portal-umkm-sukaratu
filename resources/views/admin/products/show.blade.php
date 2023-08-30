@@ -36,7 +36,7 @@
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Foto Produk</label>
                     <div class="col-sm-10 text-center">
-                        <img src="{{ asset('storage/productsImages/' . $products->image) }}" style="width: 256px; height: 256px; object-fit: cover;">
+                        <img src="{{ asset('storage/public/productsImages/' . $products->image) }}" style="width: 256px; height: 256px; object-fit: cover;">
                     </div>
                 </div>
                 <div class="form-group row">

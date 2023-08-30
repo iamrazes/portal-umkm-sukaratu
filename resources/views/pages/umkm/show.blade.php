@@ -10,7 +10,7 @@
             <div class="card-body shadow">
                 <div class="d-flex flex-row">
                     <div class="p-2">
-                        <img src="{{ asset('storage/public/productsImages/' . $item->image) }}"
+                        <img src="{{ asset('storage/public/productsImages/' . $products->image) }}"
                             style="
                     width: 420px;
                     height: 100%;
