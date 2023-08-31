@@ -285,8 +285,8 @@ margin-bottom: 40px;
 .whatsapp {
     background-color: #00A400;
     border-radius: 48px;
-    height: 80px;
-    width: 360px;
+    height: auto;
+    width: 100%;
     font-weight: bold;
     color: white;
     font-family: inherit;
@@ -382,3 +382,4 @@ margin-bottom: 40px;
 .btn-white2:hover {
     background-color: lightgrey;
 }
+
