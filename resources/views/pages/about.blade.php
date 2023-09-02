@@ -13,12 +13,22 @@
                 <img src="{{asset('images/about2.jpg')}}" class="aboutcoversm" alt="">
                 <img src="{{asset('images/about3.jpg')}}" class="aboutcoversm" alt="">
             </div>
-            <div class="text-center">
-                <h1>KKN UNPI 2023</h1>
-                <h2>KELOMPOK 11</h2>
+            <div class="d-md-flex justify-content-between mt-5 mb-5">
+                <div class="text-center">
+                    <img src="{{asset('images/logokkn.png')}}"
+                    style="">
+                </div>
+                <div class=" text-center">
+                    <h1>KKN UNPI 2023</h1>
+                    <h2>KELOMPOK 11</h2>
+                </div>
+                <div class="text-center">
+                    <img src="{{asset('images/logokkn.png')}}"
+                    style="">
+                </div>
             </div>
         </div>
-        <div class="text-center  mt-5">
+        <div class="text-center mt-5">
             <img src="{{ asset('images/about/arsyi.png') }}" class="imgprofil" alt="">
             <h3>M. Arsyi Putra</h3>
             <h4>Ketua Kelompok KKN</h4>

@@ -16,7 +16,7 @@
                     </div>
                     <div class="pb-4" style="
                     text-align: end;">
-                        <a class="social" style="color: #F1BB69;" href="http://instagram.com">
+                        <a class="social" style="color: #F1BB69;" href="https://www.instagram.com/kknunpi.desasukaratu">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                                 class="bi bi-instagram" viewBox="0 0 16 16">
                                 <path

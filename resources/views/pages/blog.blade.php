@@ -286,7 +286,7 @@
                     <div class="p-4">
                         <h4 class="fst-italic">Sosial Media</h4>
                         <ol class="list-unstyled">
-                            <li><a href="https://instagram.com">Instagram</a></li>
+                            <li><a href="https://www.instagram.com/kknunpi.desasukaratu">Instagram</a></li>
                             <li><a href="https://facebook.com">Facebook</a></li>
                         </ol>
                     </div>
